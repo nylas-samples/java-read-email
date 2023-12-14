@@ -14,7 +14,8 @@ This sample will show you to easily read messages from your inbox with the Nylas
 You'll need the following values:
 
 ```text
-ACCESS_TOKEN = ""
+V3_TOKEN_API = ""
+GRANT_ID=
 ```
 
 Add the above values to a new `.env` file:
@@ -27,7 +28,7 @@ $ touch .env # Then add your env variables
 
 ```bash
 org.slf4j / slf4j-simple / 1.7.25
-com.nylas.sdk / nylas-java-sdk / 1.15.0
+com.nylas.sdk / nylas / 2.0.0-beta.2
 io.github.cdimascio / dotenv-java / 2.2.4
 ```
 
@@ -47,8 +48,7 @@ Run the app using the `maven` command:
 $ mvn exec:java -Dexec.mainClass="ReadInbox"
 ```
 
-When successfull, it will display the first 5 emails in your inbox
-
+When successfull, it will display the first 5 emails in your inbox along with their date
 
 ## Learn more
 
