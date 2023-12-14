@@ -16,7 +16,7 @@ public class ReadEmailParameters {
         NylasClient nylas = new NylasClient.Builder(dotenv.get("V3_TOKEN_API")).build();
 
         ListMessagesQueryParams queryParams = new ListMessagesQueryParams.Builder().
-                limit(3).
+                limit(5).
                 inFolder(List.of("inbox")).
                 build();
 
